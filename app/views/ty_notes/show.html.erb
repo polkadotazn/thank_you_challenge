@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gifter:</strong>
+  <%= @ty_note.gifter_id %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @ty_note.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @ty_note.last_name %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @ty_note.subject %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @ty_note.body %>
+</p>
+
+<%= link_to 'Edit', edit_ty_note_path(@ty_note) %> |
+<%= link_to 'Back', ty_notes_path %>

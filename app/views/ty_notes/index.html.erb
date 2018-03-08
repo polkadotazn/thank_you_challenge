@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ty Notes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gifter</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Subject</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ty_notes.each do |ty_note| %>
+      <tr>
+        <td><%= ty_note.gifter_id %></td>
+        <td><%= ty_note.first_name %></td>
+        <td><%= ty_note.last_name %></td>
+        <td><%= ty_note.subject %></td>
+        <td><%= ty_note.body %></td>
+        <td><%= link_to 'Show', ty_note %></td>
+        <td><%= link_to 'Edit', edit_ty_note_path(ty_note) %></td>
+        <td><%= link_to 'Destroy', ty_note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ty Note', new_ty_note_path %>

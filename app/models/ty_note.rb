@@ -1,0 +1,2 @@
+class TyNote < ApplicationRecord
+end

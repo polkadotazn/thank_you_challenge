@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @order.customer_id %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @order.item %>
+</p>
+
+<p>
+  <strong>Order total:</strong>
+  <%= @order.order_total %>
+</p>
+
+<p>
+  <strong>Giftee email:</strong>
+  <%= @order.giftee_email %>
+</p>
+
+<p>
+  <strong>Child name:</strong>
+  <%= @order.child_name %>
+</p>
+
+<p>
+  <strong>Shipping date:</strong>
+  <%= @order.shipping_date %>
+</p>
+
+<p>
+  <strong>Payment info:</strong>
+  <%= @order.payment_info %>
+</p>
+
+<p>
+  <strong>Billing address:</strong>
+  <%= @order.billing_address %>
+</p>
+
+<p>
+  <strong>Shipping address:</strong>
+  <%= @order.shipping_address %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
